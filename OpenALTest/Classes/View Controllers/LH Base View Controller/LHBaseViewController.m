@@ -76,15 +76,13 @@
     
     if (CGRectContainsPoint(self.buttonListener.customView.bounds, [touch locationInView:self.buttonListener.customView]))
     {
-        NSLog(@"In Listener button");
-        [self startAnimationListener:beginPoint];
+        //In Listener button touch
         [self startToAnimateToolBarButton:self.buttonListener withImage:pathImageListener toPoint:beginPoint];
     }
     else if (CGRectContainsPoint(self.buttonSoundSource.customView.bounds, [touch locationInView:self.buttonSoundSource.customView]))
     {
-        NSLog(@"In Sound Source button");
-        [self startAnimationSoundSource:beginPoint];
-        [self startToAnimateToolBarButton:<#(UIBarButtonItem *)#> withImage:<#(NSString *)#> toPoint:<#(CGPoint)#>]
+        //In Sound Source button touch
+        [self startToAnimateToolBarButton:self.buttonSoundSource withImage:pathImageSoundSource toPoint:beginPoint];
     }
 
 }
@@ -94,17 +92,7 @@
     CGPoint endPoint = [[touches anyObject]locationInView:self.view];
     NSLog(@"End at point x:%f y:%f",endPoint.x,endPoint.y);
     
-    [imageToMove.layer removeAllAnimations];
-    
-//    CGRect positionInScrollView = [imageToMove convertRect:imageToMove.frame toView:self.scrollView];
-    [imageToMove removeFromSuperview];
-    CGPoint centerWithOffset = imageToMove.center;
-    centerWithOffset.x += self.scrollView.contentOffset.x;
-    centerWithOffset.y += self.scrollView.contentOffset.y;
-    imageToMove.center = centerWithOffset;
-
-    [self.scrollView addSubview:imageToMove];
-    
+    [self dropImageView:imageToMove onScrollView:self.scrollView];
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -125,6 +113,19 @@
 
 #pragma mark - drag & drop system
 
+- (void) dropImageView:(UIImageView*) imageView onScrollView:(UIScrollView*) scrollViewToDrop
+{
+    [imageView.layer removeAllAnimations];
+    
+    [imageView removeFromSuperview];
+    CGPoint centerWithOffset = imageView.center;
+    centerWithOffset.x += scrollViewToDrop.contentOffset.x;
+    centerWithOffset.y += scrollViewToDrop.contentOffset.y;
+    imageView.center = centerWithOffset;
+    
+    [scrollViewToDrop addSubview:imageToMove];
+}
+
 #pragma mark - animation
 
 - (void) startToAnimateToolBarButton:(UIBarButtonItem*) button withImage:(NSString*) pathToImage toPoint: (CGPoint) point
@@ -136,28 +137,4 @@
         imageToMove.center = point;
     }];
 }
-
-
-- (void) startAnimationListener:(CGPoint) toPoint
-{
-    imageToMove =[[UIImageView alloc] initWithImage:[UIImage imageNamed:pathImageListener]];
-    [self.view addSubview:imageToMove];
-    //imageListener.frame = self.buttonListener.customView.frame;
-    imageToMove.frame = [self.view convertRect:self.buttonListener.customView.frame fromView:self.toolBar];
-    [UIView animateWithDuration:0.1 animations:^{
-        imageToMove.center = toPoint;
-    }];
-}
-
-- (void) startAnimationSoundSource:(CGPoint) toPoint
-{
-    imageToMove =[[UIImageView alloc] initWithImage:[UIImage imageNamed:pathImageSoundSource]];
-    [self.view addSubview:imageToMove];
-    //imageListener.frame = self.buttonListener.customView.frame;
-    imageToMove.frame = [self.view convertRect:self.buttonSoundSource.customView.frame fromView:self.toolBar];
-    [UIView animateWithDuration:0.1 animations:^{
-        imageToMove.center = toPoint;
-    }];
-}
-
 @end
