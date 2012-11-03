@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0509012616428EC2004B08BC /* img_ear.png in Resources */ = {isa = PBXBuildFile; fileRef = 0509012316428EC2004B08BC /* img_ear.png */; };
+		0509012716428EC2004B08BC /* img_soundSource_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0509012416428EC2004B08BC /* img_soundSource_off.png */; };
+		0509012816428EC2004B08BC /* img_soundSource_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0509012516428EC2004B08BC /* img_soundSource_on.png */; };
+		0509012C1642921D004B08BC /* img_ear_55X55.png in Resources */ = {isa = PBXBuildFile; fileRef = 050901291642921D004B08BC /* img_ear_55X55.png */; };
+		0509012D1642921D004B08BC /* img_soundSource_off_55X55.png in Resources */ = {isa = PBXBuildFile; fileRef = 0509012A1642921D004B08BC /* img_soundSource_off_55X55.png */; };
+		0509012E1642921D004B08BC /* img_soundSource_on_55X55.png in Resources */ = {isa = PBXBuildFile; fileRef = 0509012B1642921D004B08BC /* img_soundSource_on_55X55.png */; };
+		051BF1401643D3CE009A29C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051BF13F1643D3CE009A29C2 /* QuartzCore.framework */; };
+		0573C8AA163EB918001F7F1C /* LHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C8A8163EB918001F7F1C /* LHBaseViewController.m */; };
+		0573C8AB163EB918001F7F1C /* LHBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0573C8A9163EB918001F7F1C /* LHBaseViewController.xib */; };
+		05777D96163EADC80085372C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05777D95163EADC80085372C /* UIKit.framework */; };
+		05777D98163EADC80085372C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05777D97163EADC80085372C /* Foundation.framework */; };
+		05777D9A163EADC80085372C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05777D99163EADC80085372C /* CoreGraphics.framework */; };
+		05777DA0163EADC80085372C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05777D9E163EADC80085372C /* InfoPlist.strings */; };
+		05777DA2163EADC80085372C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05777DA1163EADC80085372C /* main.m */; };
+		05777DA8163EADC80085372C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 05777DA7163EADC80085372C /* Default.png */; };
+		05777DAA163EADC80085372C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05777DA9163EADC80085372C /* Default@2x.png */; };
+		05777DAC163EADC90085372C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05777DAB163EADC90085372C /* Default-568h@2x.png */; };
+		05777DBE163EB0DD0085372C /* LHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05777DBD163EB0DD0085372C /* LHAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0509012316428EC2004B08BC /* img_ear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_ear.png; sourceTree = "<group>"; };
+		0509012416428EC2004B08BC /* img_soundSource_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_soundSource_off.png; sourceTree = "<group>"; };
+		0509012516428EC2004B08BC /* img_soundSource_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_soundSource_on.png; sourceTree = "<group>"; };
+		050901291642921D004B08BC /* img_ear_55X55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_ear_55X55.png; sourceTree = "<group>"; };
+		0509012A1642921D004B08BC /* img_soundSource_off_55X55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_soundSource_off_55X55.png; sourceTree = "<group>"; };
+		0509012B1642921D004B08BC /* img_soundSource_on_55X55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_soundSource_on_55X55.png; sourceTree = "<group>"; };
+		051BF13F1643D3CE009A29C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0573C8A7163EB918001F7F1C /* LHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBaseViewController.h; sourceTree = "<group>"; };
+		0573C8A8163EB918001F7F1C /* LHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBaseViewController.m; sourceTree = "<group>"; };
+		0573C8A9163EB918001F7F1C /* LHBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHBaseViewController.xib; sourceTree = "<group>"; };
+		05777D91163EADC80085372C /* OpenALTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenALTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05777D95163EADC80085372C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		05777D97163EADC80085372C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05777D99163EADC80085372C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		05777D9D163EADC80085372C /* OpenALTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenALTest-Info.plist"; sourceTree = "<group>"; };
+		05777D9F163EADC80085372C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05777DA1163EADC80085372C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05777DA3163EADC80085372C /* OpenALTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenALTest-Prefix.pch"; sourceTree = "<group>"; };
+		05777DA7163EADC80085372C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		05777DA9163EADC80085372C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		05777DAB163EADC90085372C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		05777DBC163EB0DD0085372C /* LHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHAppDelegate.h; sourceTree = "<group>"; };
+		05777DBD163EB0DD0085372C /* LHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05777D8E163EADC80085372C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051BF1401643D3CE009A29C2 /* QuartzCore.framework in Frameworks */,
+				05777D96163EADC80085372C /* UIKit.framework in Frameworks */,
+				05777D98163EADC80085372C /* Foundation.framework in Frameworks */,
+				05777D9A163EADC80085372C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0509012216428EC2004B08BC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				050901291642921D004B08BC /* img_ear_55X55.png */,
+				0509012A1642921D004B08BC /* img_soundSource_off_55X55.png */,
+				0509012B1642921D004B08BC /* img_soundSource_on_55X55.png */,
+				0509012316428EC2004B08BC /* img_ear.png */,
+				0509012416428EC2004B08BC /* img_soundSource_off.png */,
+				0509012516428EC2004B08BC /* img_soundSource_on.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0573C8A6163EB918001F7F1C /* LH Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0573C8A7163EB918001F7F1C /* LHBaseViewController.h */,
+				0573C8A8163EB918001F7F1C /* LHBaseViewController.m */,
+				0573C8A9163EB918001F7F1C /* LHBaseViewController.xib */,
+			);
+			path = "LH Base View Controller";
+			sourceTree = "<group>";
+		};
+		05777D86163EADC80085372C = {
+			isa = PBXGroup;
+			children = (
+				05777D9B163EADC80085372C /* OpenALTest */,
+				05777D94163EADC80085372C /* Frameworks */,
+				05777D92163EADC80085372C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05777D92163EADC80085372C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05777D91163EADC80085372C /* OpenALTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05777D94163EADC80085372C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051BF13F1643D3CE009A29C2 /* QuartzCore.framework */,
+				05777D95163EADC80085372C /* UIKit.framework */,
+				05777D97163EADC80085372C /* Foundation.framework */,
+				05777D99163EADC80085372C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05777D9B163EADC80085372C /* OpenALTest */ = {
+			isa = PBXGroup;
+			children = (
+				0509012216428EC2004B08BC /* Images */,
+				05777DBB163EB0DD0085372C /* AppDelegate */,
+				05777DB7163EB0BB0085372C /* View Controllers */,
+				05777D9C163EADC80085372C /* Supporting Files */,
+			);
+			path = OpenALTest;
+			sourceTree = "<group>";
+		};
+		05777D9C163EADC80085372C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05777D9D163EADC80085372C /* OpenALTest-Info.plist */,
+				05777D9E163EADC80085372C /* InfoPlist.strings */,
+				05777DA1163EADC80085372C /* main.m */,
+				05777DA3163EADC80085372C /* OpenALTest-Prefix.pch */,
+				05777DA7163EADC80085372C /* Default.png */,
+				05777DA9163EADC80085372C /* Default@2x.png */,
+				05777DAB163EADC90085372C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05777DB7163EB0BB0085372C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0573C8A6163EB918001F7F1C /* LH Base View Controller */,
+			);
+			name = "View Controllers";
+			path = "Classes/View Controllers";
+			sourceTree = "<group>";
+		};
+		05777DBB163EB0DD0085372C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				05777DBC163EB0DD0085372C /* LHAppDelegate.h */,
+				05777DBD163EB0DD0085372C /* LHAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05777D90163EADC80085372C /* OpenALTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05777DAF163EADC90085372C /* Build configuration list for PBXNativeTarget "OpenALTest" */;
+			buildPhases = (
+				05777D8D163EADC80085372C /* Sources */,
+				05777D8E163EADC80085372C /* Frameworks */,
+				05777D8F163EADC80085372C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenALTest;
+			productName = OpenALTest;
+			productReference = 05777D91163EADC80085372C /* OpenALTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05777D88163EADC80085372C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = LoneHouse;
+			};
+			buildConfigurationList = 05777D8B163EADC80085372C /* Build configuration list for PBXProject "OpenALTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05777D86163EADC80085372C;
+			productRefGroup = 05777D92163EADC80085372C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05777D90163EADC80085372C /* OpenALTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05777D8F163EADC80085372C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05777DA0163EADC80085372C /* InfoPlist.strings in Resources */,
+				05777DA8163EADC80085372C /* Default.png in Resources */,
+				05777DAA163EADC80085372C /* Default@2x.png in Resources */,
+				05777DAC163EADC90085372C /* Default-568h@2x.png in Resources */,
+				0573C8AB163EB918001F7F1C /* LHBaseViewController.xib in Resources */,
+				0509012616428EC2004B08BC /* img_ear.png in Resources */,
+				0509012716428EC2004B08BC /* img_soundSource_off.png in Resources */,
+				0509012816428EC2004B08BC /* img_soundSource_on.png in Resources */,
+				0509012C1642921D004B08BC /* img_ear_55X55.png in Resources */,
+				0509012D1642921D004B08BC /* img_soundSource_off_55X55.png in Resources */,
+				0509012E1642921D004B08BC /* img_soundSource_on_55X55.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05777D8D163EADC80085372C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05777DA2163EADC80085372C /* main.m in Sources */,
+				05777DBE163EB0DD0085372C /* LHAppDelegate.m in Sources */,
+				0573C8AA163EB918001F7F1C /* LHBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05777D9E163EADC80085372C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05777D9F163EADC80085372C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05777DAD163EADC90085372C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05777DAE163EADC90085372C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05777DB0163EADC90085372C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALTest/OpenALTest-Prefix.pch";
+				INFOPLIST_FILE = "OpenALTest/OpenALTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05777DB1163EADC90085372C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALTest/OpenALTest-Prefix.pch";
+				INFOPLIST_FILE = "OpenALTest/OpenALTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05777D8B163EADC80085372C /* Build configuration list for PBXProject "OpenALTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05777DAD163EADC90085372C /* Debug */,
+				05777DAE163EADC90085372C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05777DAF163EADC90085372C /* Build configuration list for PBXNativeTarget "OpenALTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05777DB0163EADC90085372C /* Debug */,
+				05777DB1163EADC90085372C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05777D88163EADC80085372C /* Project object */;
+}
