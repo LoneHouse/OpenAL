@@ -16,12 +16,12 @@
 {
     UIImageView * imageToMove;
     NSMutableArray * soundSources;
+    UIPanGestureRecognizer * panRecognizer;
 }
 
 @end
 
 @implementation LHBaseViewController
-
 
 #pragma mark - init & ViewController
 

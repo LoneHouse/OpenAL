@@ -147,6 +147,7 @@
 		05777DB7163EB0BB0085372C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				05CA875716480A830061D755 /* LH Scroll View Controller */,
 				0573C8A6163EB918001F7F1C /* LH Base View Controller */,
 			);
 			name = "View Controllers";
@@ -160,6 +161,13 @@
 				05777DBD163EB0DD0085372C /* LHAppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		05CA875716480A830061D755 /* LH Scroll View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "LH Scroll View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
