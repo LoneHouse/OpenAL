@@ -56,6 +56,7 @@
     [_toolBar release];
     [super dealloc];
 }
+
 - (void)viewDidUnload {
     [self setScrollView:nil];
     [self setButtonSoundSource:nil];
@@ -84,15 +85,21 @@
         //In Sound Source button touch
         [self startToAnimateToolBarButton:self.buttonSoundSource withImage:pathImageSoundSource toPoint:beginPoint];
     }
-
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint endPoint = [[touches anyObject]locationInView:self.view];
     NSLog(@"End at point x:%f y:%f",endPoint.x,endPoint.y);
-    
-    [self dropImageView:imageToMove onScrollView:self.scrollView];
+    if (CGRectContainsPoint(self.toolBar.frame,imageToMove.center) ) {
+		//in toolBar
+		[imageToMove release];
+		[self fadeOutImage:imageToMove withDuration:1.0 andRemoveFromSuperView:YES];
+		imageToMove = nil;
+	} else {
+		//In Scroll view
+		[self dropImageView:imageToMove onScrollView:self.scrollView];
+	}
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -124,6 +131,7 @@
     imageView.center = centerWithOffset;
     
     [scrollViewToDrop addSubview:imageToMove];
+	[imageToMove release];
 }
 
 #pragma mark - animation
@@ -136,5 +144,21 @@
     [UIView animateWithDuration:0.1 animations:^{
         imageToMove.center = point;
     }];
+}
+
+- (void) fadeOutImage:(UIImageView*) image withDuration:(float) duration andRemoveFromSuperView:(BOOL) isNeedToRemove
+{
+	[image.layer removeAllAnimations];
+	
+	[UIView animateWithDuration:duration animations:^{
+		[image setAlpha:0.0];
+	} completion:^(BOOL isFinished){
+		if (isFinished && isNeedToRemove) {
+			NSLog(@"+-%d-+",[image retainCount]);
+			[image removeFromSuperview];
+			NSLog(@"+-%d-+",[image retainCount]);
+		}
+	}];
+	
 }
 @end

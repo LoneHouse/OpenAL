@@ -13,5 +13,6 @@
 @property (retain, nonatomic) IBOutlet UIBarButtonItem *buttonSoundSource;
 @property (retain, nonatomic) IBOutlet UIBarButtonItem *buttonListener;
 @property (retain, nonatomic) IBOutlet UIToolbar *toolBar;
+@property (assign,nonatomic) BOOL isListenerOnField;
 
 @end
